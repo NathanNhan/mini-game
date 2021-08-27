@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sockets Example</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/addons/p5.sound.min.js"></script>
+  <link href="css/styles-sockets.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="appbar">
+    <a class="abitem" style="margin-left: 53.72px;" href="/">CrosswordGame</a>
+    <a class="abitem" href="/Sockets">Sockets</a>
+    <span class="abitem" style="float: right" onclick="location.reload()"><i class="fa fa-refresh"></i></span>
+    <span class="abitem" style="float: right" onclick="toggleAnswer()"><i class="fa fa-eye"></i></span>
+  </div>
+  <div class="tong">
+    <div class="tieude">
+      <h1>
+        <span style="color: red;">Sockets</span>
+        <span style="color: orange;">Coding</span>
+        <span style="color: yellow;">Rainbow</span>
+      </h1>
+    </div>
+    
+    
+
+    <main id="aaa">
+      <div class="header">
+        <input type="text" id="text" disabled>
+        <input type="button" id="Clear" value="Clear" >
+      </div>
+      <div id="word"></div>
+    </main>
+
+    <div id="mario-chat">
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+      </div>
+      <input id="handle" type="text" placeholder="Handle">
+      <input id="message" type="text" placeholder="Message">
+      <input type="button" id="send" value="Send">
+
+    </div>
+    <div class="dapan">
+      <input type="text" id="dapan" placeholder="New KeyWord">
+      <input type="button" id="goiy" value="Input">
+    </div>
+    
+    
+
+  </div>
+</body>
+<!-- <script type="text/javascript">
+  
+  let goiy = document.getElementById("goiy");
+  
+  let answer = ["c","o","n","g","a"];
+
+  
+  
+  goiy.addEventListener("click",function(){
+    let dapan = document.getElementById("dapan").value;
+    console.log(dapan);
+     let text = document.getElementById("text");
+     console.log(text);
+     let randoms = Math.floor(random() * dapan.length);
+     console.log(randoms);
+     var results = [];
+     for(i=0;i<=dapan.length;i++){
+    if(randoms == i){
+      results += dapan[randoms];
+    }else{results += "?"}
+  }
+     
+    
+     text.value = results;
+  })
+</script> -->
+<script type="text/javascript" src="js/chat.js"></script>
+<script type="text/javascript" src="js/sketch.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

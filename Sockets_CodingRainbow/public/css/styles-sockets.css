@@ -1,0 +1,192 @@
+body{
+    padding: 0px !important;
+    font-family: 'Nunito';
+    background: url("../imgs/background.png") center fixed;
+    background-size: 200px;
+}
+a{
+    text-decoration: none !important;
+}
+
+.tong{
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#nut{
+    display: block;
+}
+h2{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #575ed8;
+}
+
+#mario-chat{
+    float: right;
+    width: 270px;
+}
+.p5Canvas{
+    border-radius: 50px;
+    border: 5px solid rgb(0, 0, 0);
+}
+#chat-window{
+    height: 390px;
+    overflow: auto;
+    background: #eeeeee;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.header{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-bottom: 19px;
+}
+.header h1{
+    line-height: 30px;
+    margin-left: 30px;
+}
+
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #b6b6b6;
+    color: #555;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: #575ed8;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+    outline: none;
+}
+button{
+    position: relative;
+    right: 150px;
+    bottom: 505px;
+    background: #beac09;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#send{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+    background-color: #beac09;
+    margin-bottom: 10px;
+    
+}
+
+#goiy{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+    background-color: #beac09;
+    
+    
+}
+
+#Clear{
+    border: none;
+    background-color: #beac09;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+#text{
+    border-bottom: none;
+    padding-left: 40px;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+#dapan{
+    width: 700px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+}
+#goiy{
+    float: right;
+    width: 270px;
+    border-radius: 10px;
+}
+main{
+    display: none;
+}
+#aaa{
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#appbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #011a399f;
+    color: white;
+    z-index: 313;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    
+}
+
+#drawer{
+    background-color: #ffffff;
+    width: 512px;
+    max-width: 85%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 70px;
+    display: none;
+    overflow: auto;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+.abitem{
+    padding: 20px;
+    display: inline-block;
+    color: #fff;
+}
+a:hover {
+    color: #b1b1b1;
+}

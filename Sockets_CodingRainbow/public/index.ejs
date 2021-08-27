@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CrosswordGame</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<script src="js/jquery.js"></script>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		
+		
+		<div class="screen" id="game">
+			<div id="ttscontainer" >
+				<div id="crossword"></div>
+			</div>
+			<table id="clues">
+				<thead>
+					<tr>
+						<th>Across</th>
+						<th>Down</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><ul id="across"></ul></td>
+						<td><ul id="down"></ul></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			
+			
+			<div id="vkeyboard">
+				<h3>Enter the correct letter</h3>
+				<div id="kbtnlist1"></div>
+				<div id="kbtnlist2"></div>
+				<div id="kbtnlist3"></div>
+				<button id="kbtnlistbtn" onclick="$('#vkeyboard').hide()"><i class="fa fa-times"></i> Close</button>
+			</div>
+		</div>
+		
+		
+		<div id="appbar">
+			<span class="abitem" onclick="toggledrawer()"><i class="fa fa-bars"></i></span>
+			<a class="abitem" style="z-index: 10;" href="/">CrosswordGame</a>
+			<a class="abitem" style="z-index: 10;" href="/Sockets">Sockets</a>
+			<span class="abitem" style="float: right" onclick="location.reload()"><i class="fa fa-refresh"></i></span>
+			<span class="abitem" style="float: right" onclick="toggleAnswer()"><i class="fa fa-eye"></i></span>
+			
+		</div>
+		<div id="drawer">
+			<div class="ditem" onclick="setqcount(3)"><i class="fa fa-edit"></i> 3 Words</div>
+			<div class="ditem" onclick="setqcount(5)"><i class="fa fa-edit"></i> 5 Words</div>
+			<div class="ditem" onclick="setqcount(7)"><i class="fa fa-edit"></i> 7 Words</div>
+			<div class="ditem" onclick="resetsettings()"><i class="fa fa-refresh"></i> Reset</div>
+			
+		</div>
+
+		<button id="check-answer">Check answer</button>
+		<p id="score"></p>
+		
+
+		<script src="js/crossword.js"></script>
+		<script src="js/ttss.js"></script>
+		<script src="js/js.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>

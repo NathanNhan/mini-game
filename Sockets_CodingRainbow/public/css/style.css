@@ -1,0 +1,218 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf');
+}
+
+a{
+    text-decoration: none !important;
+}
+body{
+    font-family: Roboto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    user-select: none;
+    background-image: url("../imgs/nen1.jpg")  !important;
+    background-repeat: no-repeat;
+}
+
+    /* SCROLLBAR STYLING */
+    /* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.screen{
+    display: grid !important;
+    grid-template-columns: 60% 40% ;
+}
+
+
+#appbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #011a399f;
+    color: white;
+    z-index: 313;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+   
+}
+.abitem{
+    padding: 20px;
+    display: inline-block;
+    color: #fff;
+}
+a:hover {
+    color: #b1b1b1;
+}
+.noad{
+    text-align: center;
+}
+.noad button{
+    border: none;
+    background-color: #011a39;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+#drawer{
+    background-color: #ffffff;
+    width: 512px;
+    max-width: 85%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 70px;
+    display: none;
+    overflow: auto;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+#crossword {
+    text-align:left;
+}   
+
+.crossword {
+    border-collapse:collapse;
+    font-family:"Courier New", Courier, monospace;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+
+.crossword td {
+    border:3px solid #011a39;
+    padding:0;
+    margin:0;
+    vertical-align:middle;
+    text-align:center;
+    width:50px;
+    height:50px;
+    background-color: white;
+}
+
+
+.crossword .no-border {
+    border:none;
+    background: none;
+}
+
+#clues {
+    font-size: 20px;
+    color: white;
+}
+#clues th{
+    background-color: #043269;
+    text-align: center;
+    height: 30px;
+    width: 50%;
+    border-bottom: 1px solid #ffffff;
+}
+
+#clues td {
+    vertical-align:top;
+    text-align: left;
+}
+
+.canswer{
+    display: none;
+}
+button{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: #043269;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#vkeyboard{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffffd5;
+    text-align: center;
+    display: none;
+    padding: 10px;
+    z-index: 13;
+}
+#vkeyboard h3{
+    color: #000000;
+}
+#kbtnlist1{
+    width: 850px;
+    margin: auto;
+    margin-top: 50px;
+}
+#kbtnlist2{
+    width: 850px;
+    margin: auto;
+}
+#kbtnlist3{
+    width: 850px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#kbtnlistbtn{
+    width: 850px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.kbtn{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    display: inline-block;
+    width: 50px;
+    
+}
+th{
+    text-align: left;
+    font-weight: bold;
+}
+ul,li { 
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding:0; 
+}
+
+
+#game{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    display: none;
+}
+
+.ditem{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
+}
